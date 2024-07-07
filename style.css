@@ -1,0 +1,33 @@
+* {
+  background-color: #040509;
+  color: #ffffff;
+  text-align: center;
+}
+#container1 img {
+  height: 100vh;
+  border: 3px solid #ffffff;
+}
+#container2 {
+  border: 3px solid #ffffff;
+  border-left-width: 0;
+}
+#container2 h1 {
+  margin-bottom: 90px;
+  font-size: 70px;
+  font-weight: 700;
+}
+#container2 #btnMain {
+  width: 80%;
+}
+#container2 #btnMain button {
+  width: 100%;
+  background-color: #d9d9d9;
+  margin-bottom: 30px;
+}
+#container2 #btnMain button:hover {
+  color: black;
+  background-color: #c9c9c9;
+}
+#container2 #btnMain button:active {
+  background-color: #b9b9b9;
+}
