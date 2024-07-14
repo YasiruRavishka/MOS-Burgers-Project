@@ -1,0 +1,130 @@
+* {
+  background-color: #040509;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* ---------- Left Side ---------- */
+.left-bar {
+  width: clamp(40px, 6vw, 70px);
+  height: 100vh;
+}
+.left-bar img {
+  width: clamp(30px, 3vw, 60px);
+  margin: 14px auto 20px auto;
+}
+.left-top {
+  height: 90%;
+}
+#left-bottom {
+  margin: 0 !important;
+}
+
+/* ---------- Center ---------- */
+.centerContainer {
+  background-color: #d9d9d9;
+}
+.top-bar {
+  padding: 15px 8px 20px 8px;
+  align-items: center;
+}
+.top-bar h1 {
+  width: 70%;
+  text-align: left;
+}
+.top-bar h1 a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: clamp(25px, 3vw, 40px);
+  font-weight: 700;
+}
+.top-bar input {
+  width: 30%;
+  height: 50%;
+  background-color: #d9d9d9;
+  border-style: solid;
+  border-radius: 50px;
+  text-align: left;
+  font-weight: 700;
+}
+.top-bar input::placeholder {
+  font-weight: 700;
+}
+
+/* ---------- Right Side ---------- */
+.right-bar {
+  width: clamp(200px, 30vw, 350px);
+  padding: 10px 20px 10px 20px;
+}
+.btnAdd {
+  height: 15%;
+  text-align: right;
+}
+#btnExpired {
+  width: clamp(70px, 10vw, 130px);
+  margin-right: clamp(5%, 5vw, 30%);
+}
+#btnAddItem {
+  width: clamp(40px, 6vw, 70px);
+  height: clamp(40px, 6vw, 70px);
+  padding: 0;
+  background-color: #d9d9d9;
+  border: 0;
+  border-radius: 100%;
+}
+#btnAddItem:hover {
+  background-color: #c9c9c9;
+}
+#btnAddItem:active {
+  background-color: #b9b9b9;
+}
+#btnAddItem img {
+  width: clamp(30px, 4vw, 50px);
+  background-color: transparent;
+}
+.detailArea {
+  align-content: center;
+}
+.detailArea h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.detailPanel {
+  padding: 25px 20px 10px 20px;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+}
+.detailPanel h4 {
+  color: black;
+  font-weight: 600;
+  background-color: transparent;
+  text-align: left;
+}
+.detailPanel input {
+  text-align: left;
+  margin-bottom: 20px;
+}
+#unitPrice {
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+#unitPrice input {
+  margin-bottom: 0;
+}
+#discount {
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+#discount input {
+  margin-bottom: 0;
+  text-align: right;
+}
+.btnPanel {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+.btnPanel button {
+  width: clamp(70px, 10vw, 130px);
+}
