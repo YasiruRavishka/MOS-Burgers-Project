@@ -1,0 +1,166 @@
+* {
+  background-color: #040509;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* ---------- Left Side ---------- */
+.left-bar {
+  width: clamp(40px, 6vw, 70px);
+  height: 100vh;
+}
+.left-bar img {
+  width: clamp(30px, 3vw, 60px);
+  margin: 14px auto 20px auto;
+}
+.left-top {
+  height: 90%;
+}
+#left-bottom {
+  margin: 0 !important;
+}
+/* ---------- Center ---------- */
+.centerContainer {
+  background-color: #d9d9d9;
+}
+.top-bar {
+  padding: 15px 8px 20px 8px;
+  align-items: center;
+}
+.top-bar h1 {
+  width: 70%;
+  text-align: left;
+}
+.top-bar h1 a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: clamp(25px, 3vw, 40px);
+  font-weight: 700;
+}
+.top-bar input {
+  width: 30%;
+  height: 50%;
+  background-color: #d9d9d9;
+  border-style: solid;
+  border-radius: 50px;
+  text-align: left;
+  font-weight: 700;
+}
+.top-bar input::placeholder {
+  font-weight: 700;
+}
+.mainContainer div {
+  background-color: #d9d9d9;
+  text-align: left;
+}
+.mainContainer .category div label {
+  width: 100px;
+  margin: 10px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+.item-list {
+  padding: 10px;
+}
+.item-list .card {
+  margin: 10px;
+}
+.item-list .card .card-body {
+  background-color: #ffffff;
+}
+.item-list .card .card-body h3,
+.card-body .card-body-bottom h4 {
+  color: black;
+  margin: 0;
+  background-color: transparent;
+  font-weight: 700;
+}
+.item-list .card .card-body h5 {
+  background-color: transparent;
+  opacity: 70%;
+  font-weight: 600;
+}
+.card-body .card-body-bottom {
+  display: flex;
+  width: 100%;
+  margin: 20px auto 10px auto;
+  background-color: transparent;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ---------- Right Side ---------- */
+.right-bar {
+  width: clamp(200px, 30vw, 350px);
+  height: 100vh;
+  padding: 10px 20px 10px 20px;
+  align-content: center;
+}
+.right-bar h1 {
+  font-weight: 700;
+}
+.cartArea {
+  height: 50%;
+  padding: 20px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+}
+.tableList {
+  width: 100%;
+  overflow: auto;
+}
+.tableList tr td {
+  color: black;
+  background-color: #d9d9d9;
+  text-align: left;
+  font-weight: 700;
+}
+.tableList .btnCount {
+  width: 40%;
+  text-align: center;
+  align-content: center;
+}
+.tableList .btnCount div {
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+}
+.tableList .btnCount div img {
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+  background-color: transparent;
+}
+.detailArea {
+  margin: 10px auto 0 auto;
+}
+.detailArea table td,
+td h2 {
+  text-align: left;
+  font-weight: 600;
+}
+.detailArea table .col02 {
+  width: 30%;
+}
+.detailArea table .input-group {
+  align-items: center;
+  font-weight: 700;
+}
+.detailArea table .input-group input {
+  height: 30px;
+  margin: 5px 5px 5px auto;
+  background-color: #d9d9d9;
+  font-weight: 600;
+}
+.btnPanel {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  justify-content: space-around;
+}
+.btnPanel button {
+  width: clamp(70px, 10vw, 130px);
+  font-weight: 600;
+}
