@@ -3,6 +3,9 @@
   color: #ffffff;
   text-align: center;
 }
+body {
+  height: 100vh;
+}
 
 /* ---------- Left Side ---------- */
 .left-bar {
@@ -25,6 +28,7 @@
   background-color: #d9d9d9;
 }
 .top-bar {
+  height: 10%;
   padding: 15px 8px 20px 8px;
   align-items: center;
 }
@@ -40,7 +44,6 @@
 }
 .top-bar input {
   width: 30%;
-  height: 50%;
   background-color: #d9d9d9;
   border-style: solid;
   border-radius: 50px;
@@ -49,6 +52,11 @@
 }
 .top-bar input::placeholder {
   font-weight: 700;
+}
+.mainContainer{
+  height: 90%;
+  background-color: #d9d9d9;
+  overflow: auto;
 }
 
 /* ---------- Right Side ---------- */

@@ -3,11 +3,13 @@
   color: #ffffff;
   text-align: center;
 }
+body {
+  height: 100vh;
+}
 
 /* ---------- Left Side ---------- */
 .left-bar {
   width: clamp(40px, 6vw, 70px);
-  height: 100vh;
 }
 .left-bar img {
   width: clamp(30px, 3vw, 60px);
@@ -24,6 +26,7 @@
   background-color: #d9d9d9;
 }
 .top-bar {
+  height: 10%;
   padding: 15px 8px 20px 8px;
   align-items: center;
 }
@@ -39,7 +42,6 @@
 }
 .top-bar input {
   width: 30%;
-  height: 50%;
   background-color: #d9d9d9;
   border-style: solid;
   border-radius: 50px;
@@ -49,8 +51,13 @@
 .top-bar input::placeholder {
   font-weight: 700;
 }
-.mainContainer div {
+.mainContainer{
+  height: 90%;
   background-color: #d9d9d9;
+  overflow: auto;
+}
+.mainContainer div {
+  background-color: transparent;
   text-align: left;
 }
 .mainContainer .category div label {
@@ -92,7 +99,6 @@
 /* ---------- Right Side ---------- */
 .right-bar {
   width: clamp(200px, 30vw, 350px);
-  height: 100vh;
   padding: 10px 20px 10px 20px;
   align-content: center;
 }
