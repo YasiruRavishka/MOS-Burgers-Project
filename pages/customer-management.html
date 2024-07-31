@@ -46,16 +46,16 @@
     <div class="centerContainer flex-fill">
       <div class="top-bar d-flex">
         <h1><a href="../index.html">MOS Burgers</a></h1>
-        <input class="form-control me-2" type="search" placeholder="Search" />
+        <input class="form-control me-2" type="search" placeholder="Search" id="searchBar" onkeyup="search()"/>
       </div>
       <div class="mainContainer">
-        <table class="table table-responsive">
+        <table class="table table-bordered table-hover">
           <tr>
             <th>No.</th>
             <th>Customer Name</th>
             <th>Phone Number</th>
           </tr>
-          <tbody class="tableBody">
+          <tbody id="custTableBody">
 
           </tbody>
         </table>
@@ -64,24 +64,25 @@
     <!---------------------------- Right ---------------------------->
     <div class="right-bar">
       <div class="btnAdd">
-        <button type="button">
+        <button type="button" onclick="clearCustomer()">
           <img src="../assets/add-user-dark.png" alt="addUser" />
         </button>
       </div>
       <div id="spaceDiv"></div>
       <div class="detailArea">
-        <h1>Customer01</h1>
+        <h1 id="newCustomerTitle">Customer</h1>
         <div class="detailPanel">
           <h3>Name</h3>
-          <input type="text" class="form-control">
+          <input type="text" class="form-control" id="newCustomerName" value="">
           <h3>Phone Number</h3>
-          <input type="tel" class="form-control">
+          <input type="tel" class="form-control" id="newCustomerNumber" value="">
         </div>
         <div class="btnPanel">
-          <button type="button" class="btn btn-danger">Delete</button>
-          <button type="button" class="btn btn-success">Update</button>
+          <button type="button" class="btn btn-danger" id="btnDelete" onclick="clearDetails()">Clear</button>
+          <button type="button" class="btn btn-success" id="btnSubmit" onclick="addNewCustomer()">Submit</button>
         </div>
       </div>
     </div>
+    <script src="../app.js"></script>
   </body>
 </html>

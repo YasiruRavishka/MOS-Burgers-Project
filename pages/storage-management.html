@@ -46,15 +46,15 @@
     <div class="centerContainer flex-fill">
       <div class="top-bar d-flex">
         <h1><a href="../index.html">MOS Burgers</a></h1>
-        <input class="form-control me-2" type="search" placeholder="Search" />
+        <input class="form-control me-2" type="search" placeholder="Search" id="searchBar" onkeyup="search()"/>
       </div>
       <div class="mainContainer">
-        <table class="table table-responsive">
+        <table class="table table-bordered table-hover">
           <tr>
             <th>Item Code</th>
             <th>Item Name</th>
           </tr>
-          <tbody class="tableBody">
+          <tbody id="itemTableBody">
 
           </tbody>
         </table>
@@ -63,37 +63,38 @@
     <!---------------------------- Right ---------------------------->
     <div class="right-bar">
       <div class="btnAdd">
-        <button type="button" class="btn btn-primary" id="btnExpired">Expired Items</button>
-        <button type="button" id="btnAddItem">
+        <button type="button" id="btnExpired" class="btn btn-primary" role="button" data-bs-toggle="button" onclick="displayEXPItem(false)">Expired Items</button>
+        <button type="button" id="btnAddItem" onclick="clearItem()">
           <img src="../assets/add-list-dark.png" alt="addItem" />
         </button>
       </div>
       <div class="detailArea">
-        <h1>Item Code</h1>
+        <h1 id="newItemTitle">Add new Item</h1>
         <div class="detailPanel">
           <h4>Name</h4>
-          <input type="text" class="form-control" />
+          <input type="text" class="form-control" id="newItemName"/>
           <h4>Expired Date</h4>
-          <input type="date" class="form-control" />
+          <input type="date" class="form-control" id="newItemEXP"/>
           <h4>Unit Price</h4>
           <div class="input-group mb-3" id="unitPrice">
             <span class="input-group-text">Rs .</span>
-            <input type="text" class="form-control" />
+            <input type="text" class="form-control" id="newItemUPrice"/>
             <span class="input-group-text">. 00</span>
           </div>
           <h4>Discount</h4>
           <div class="input-group mb-3" id="discount">
-            <input type="text" class="form-control" />
+            <input type="text" class="form-control" id="newItemDiscount"/>
             <span class="input-group-text">%</span>
           </div>
           <h4>Quantity</h4>
-          <input type="number" class="form-control" />
+          <input type="number" class="form-control" id="newItemQty"/>
         </div>
         <div class="btnPanel">
-          <button type="button" class="btn btn-danger">Delete</button>
-          <button type="button" class="btn btn-success">Update</button>
+          <button type="button" class="btn btn-danger" id="btnDelete" onclick="clearDetails()">Delete</button>
+          <button type="button" class="btn btn-success" id="btnSubmit" onclick="addNewItem()">Update</button>
         </div>
       </div>
     </div>
+    <script src="../app.js"></script>
   </body>
 </html>

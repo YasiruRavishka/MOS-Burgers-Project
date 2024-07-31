@@ -46,7 +46,7 @@
     <div class="centerContainer flex-fill">
       <div class="top-bar d-flex">
         <h1><a href="../index.html">MOS Burgers</a></h1>
-        <input class="form-control me-2" type="search" placeholder="Search" />
+        <input class="form-control me-2" type="search" placeholder="Search" id="searchBar" onkeyup="search()"/>
       </div>
       <div class="mainContainer">
         <div class="category d-flex flex-wrap">
@@ -112,18 +112,8 @@
             <label class="btn btn-light" for="vbtn-radio5">Desserts</label>
           </div>
         </div>
-        <div class="item-list d-flex flex-wrap">
-          <div class="card" style="width: 18rem">
-            <img src="../assets/16201.jpg" class="card-img-top" alt="cola" />
-            <div class="card-body">
-              <h3 class="card-title">Cola</h3>
-              <h5 class="card-text">Exp. 2024-05-05</h5>
-              <div class="card-body-bottom">
-                <h4>Rs. 300</h4>
-                <button type="button" class="btn btn-primary" onclick="">Add to cart</button>
-              </div>
-            </div>
-          </div>
+        <div class="item-list d-flex flex-wrap" id="cardArea">
+          
         </div>
       </div>
     </div>
@@ -169,5 +159,6 @@
         <button type="button" class="btn btn-success">Check out</button>
       </div>
     </div>
+    <script src="../app.js"></script>
   </body>
 </html>
