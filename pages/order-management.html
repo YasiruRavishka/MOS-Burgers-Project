@@ -113,7 +113,7 @@
           </div>
         </div>
         <div class="item-list d-flex flex-wrap" id="cardArea">
-          
+          <!-- Item card area -->
         </div>
       </div>
     </div>
@@ -122,13 +122,13 @@
       <h1>Cart</h1>
       <div class="cartArea">
         <table class="tableList">
-          <tr>
+          <tr id="row1">
             <td>Cola</td>
             <td class="btnCount">
               <div>
-                <img src="../assets/minus-dark-24.png" alt="minus-dark" />
-                <input type="text" class="form-control" disabled />
-                <img src="../assets/plus-dark-24.png" alt="plus-dark" />
+                <img src="../assets/minus-dark-24.png" alt="minus-dark" onclick="decreaseCount('row1')"/>
+                <input id="row1-countBox" type="text" class="form-control" value="1" disabled />
+                <img src="../assets/plus-dark-24.png" alt="plus-dark" onclick="increaseCount('row1')"/>
               </div>
             </td>
           </tr>

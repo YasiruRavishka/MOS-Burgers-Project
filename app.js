@@ -338,8 +338,20 @@ function displayEXPItem(isPressed) {
   }
 }
 //-----------------Order-----------------
-function addToCart(index) {
+function addToCart(item) {
   
+}
+function decreaseCount(rowFieldId) {
+  const txtField = document.getElementById(rowFieldId + "-countBox");
+  if (parseInt(txtField.value) <= 1) {
+    document.getElementById(rowFieldId).remove();
+  } else {
+    txtField.value = parseInt(txtField.value) - 1;
+  }
+}
+function increaseCount(rowFieldId) {
+  const txtField = document.getElementById(rowFieldId + "-countBox");
+  txtField.value = parseInt(txtField.value) + 1;
 }
 function displayOrderTable() {
   const cardArea = document.getElementById("cardArea");
